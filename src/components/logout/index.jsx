@@ -35,13 +35,12 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 // TODO remove, this demo shouldn't need to reset the theme.
 const defaultTheme = createTheme();
 
-export default function Album() {
+export default function Signout() {
   return (
     <ThemeProvider theme={defaultTheme}>
     
     <Grid container component="main" sx={{ height: '100vh' }}>
       <CssBaseline />
-        
         {/* Hero unit */}
         <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
          <Box
@@ -59,7 +58,7 @@ export default function Album() {
               color="text.primary"
               gutterBottom
             >
-              Album layout
+              You're successfully loggedout
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
               Something short and leading about the collection below—its contents,
@@ -72,18 +71,13 @@ export default function Album() {
               spacing={2}
               justifyContent="center"
             >
-              <Button variant="contained">Main call to action</Button>
-              <Button variant="outlined">Secondary action</Button>
+              <Button variant="contained">Login</Button>
+              <Button variant="outlined">Signup</Button>
             </Stack>
           </Container>
         </Box>
         </Grid>
-        <Grid
-          item
-          xs={false}
-          sm={4}
-          md={7}
-          sx={{
+        <Grid item xs={false} sm={4} md={7} sx={{
             backgroundImage: 'url(https://source.unsplash.com/random?wallpapers)',
             backgroundRepeat: 'no-repeat',
             backgroundColor: (t) =>
@@ -92,9 +86,7 @@ export default function Album() {
             backgroundPosition: 'center',
           }}
         />
-      
       {/* Footer */}
-
       {/* End footer */}
       </Grid>
     </ThemeProvider>
