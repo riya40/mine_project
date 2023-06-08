@@ -19,15 +19,15 @@ import AddIcon from '@mui/icons-material/Add';
 import SearchIcon from '@mui/icons-material/Search';
 import MoreIcon from '@mui/icons-material/MoreVert';
 
-const messages = [
-  {
-    id: 1,
-    primary: 'Brunch this week?',
-    secondary: "I'll be in the neighbourhood this week. Let's grab a bite to eat",
-    person: '/static/images/avatar/5.jpg',
-  },
+//const messages = [
+  //{
+    //id: 1,
+    //primary: 'Brunch this week?',
+    //secondary: "I'll be in the neighbourhood this week. Let's grab a bite to eat",
+    //person: '/static/images/avatar/5.jpg',
+  //},
   
-];
+//];
 
 const StyledFab = styled(Fab)({
   position: 'absolute',
